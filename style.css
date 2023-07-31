@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400;700&family=Poppins:wght@300&family=Roboto&family=Tektur&display=swap");
+
+body {
+  font-family: "Tektur", cursive;
+  overflow: hidden;
+  background: conic-gradient(from -270deg at 75% 110%, fuchsia, floralwhite);
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: azure;
+  background-color: rgba(0, 0, 0, 0.152);
+}
+
+.clock h1 {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+@media (max-width: 786px) {
+  #d1{
+    display: none;
+  }
+  .clock {
+    text-align: center;
+    width: 100%;
+  }
+  clock h1 {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock h1 {
+    font-size: 4rem;
+  }
+}
